@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.candidate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.candidate-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+}
+
+.candidate-card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #007bff;
+}
+
+.candidate-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.candidate-card p span.label {
+  font-weight: bold;
+}
+
+.candidate-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.candidate-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input, select, button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
